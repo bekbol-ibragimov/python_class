@@ -1,7 +1,8 @@
-def get_min(x, y):
+def get_min(a, b):
     """
         return min number among a and b
     """
+    return a if a<b else b
 
 
 def get_min_without_arguments():
@@ -34,7 +35,7 @@ def get_min_bounded(*args, low, high):
     """
 
 
-def make_min(*, low, high):
+def make_min(low, high):
     """
         return inner function object which takes at last one argument
         and return smallest number amount it's arguments, but if the
